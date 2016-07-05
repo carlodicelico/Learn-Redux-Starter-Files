@@ -3,13 +3,14 @@ const webpack = require('webpack'),
   path = require('path'),
   HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// variables
+// path-related variables
 const resolve = path.resolve,
   join = path.join,
   root = resolve(__dirname),
   src = join(root, 'src'),
   dist = join(root, 'dist');
 
+// set up a new HtmlWebpackPlugin
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: join(src, 'index.html'),
   filename: 'index.html',
