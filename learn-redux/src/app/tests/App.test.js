@@ -8,7 +8,7 @@ import appStore from '../appStore';
 
 
 test.beforeEach(t => {
-  const store =
+  console.log('calling beforeEach callback');
   t.context.wrapper = shallow(
     <Provider store={appStore}>
       <App />
