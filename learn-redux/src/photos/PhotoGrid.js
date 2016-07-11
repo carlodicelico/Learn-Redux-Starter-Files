@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Photo from '../photo/Photo';
+import Photo from './Photo';
 
 
 const PhotoGrid = (props) => {

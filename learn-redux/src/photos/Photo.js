@@ -29,7 +29,7 @@ const Photo = (props) => {
         </div>
       </figcaption>
     </figure>
-  )
+  );
 };
 
 export default Photo;

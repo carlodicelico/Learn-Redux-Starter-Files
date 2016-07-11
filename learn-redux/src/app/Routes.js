@@ -3,8 +3,8 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 
 import Dispatcher from './appDispatcher';
-import Single from '../single/Single';
-import PhotoGrid from '../photogrid/PhotoGrid';
+import Single from '../photos/Single';
+import PhotoGrid from '../photos/PhotoGrid';
 import appStore, { history } from './appStore';
 
 
