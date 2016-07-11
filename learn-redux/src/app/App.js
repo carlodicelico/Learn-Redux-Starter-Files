@@ -1,10 +1,9 @@
 import React from 'react';
+
 import { Link } from 'react-router';
 
 
 const App = (props) => {
-  console.info('this ->', this);
-  console.info('props ->', props);
   return (
     <div>
       <h1>
