@@ -1,7 +1,6 @@
 function postComments(state = [], action) {
   switch(action.type) {
     case 'ADD_COMMENT':
-      console.info(state, action);
       return [
         // return new state with comment added
         ...state,
@@ -12,7 +11,6 @@ function postComments(state = [], action) {
       ]
     case 'REMOVE_COMMENT':
       // return new state with comment deleted
-      console.info(state, action);
       return [
         // from the start to the one we want to delete
         ...state.slice(0, action.index),

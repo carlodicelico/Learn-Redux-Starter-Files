@@ -12,8 +12,13 @@ const defaultState = {
   comments
 };
 
-const appStore = createStore(appReducer, defaultState, window.devToolsExtension && window.devToolsExtension());
-//const appStore = createStore(appReducer, defaultState);
+// for Redux DevTools
+const enhancers = compose(
+  window.devToolsExtension ? window.devToolsExtension() : f => f
+);
+
+const appStore = createStore(appReducer, defaultState, enhancers);
+
 export const history = syncHistoryWithStore(browserHistory, appStore);
 
 export default appStore;

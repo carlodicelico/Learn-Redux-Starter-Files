@@ -14,7 +14,11 @@ const resolve = path.resolve,
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: join(src, 'index.html'),
   filename: 'index.html',
-  inject: 'body'
+  inject: 'body',
+  title: 'AppStar',
+  hash: true,
+  cache: true,
+  showErrors: true
 });
 
 // main webpack config object, currently set up for dev
