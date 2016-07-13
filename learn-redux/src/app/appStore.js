@@ -14,7 +14,7 @@ const defaultState = {
 
 // for Redux DevTools
 const enhancers = compose(
-  window.devToolsExtension ? window.devToolsExtension() : f => f
+  window && window.devToolsExtension ? window.devToolsExtension() : f => f
 );
 
 const appStore = createStore(appReducer, defaultState, enhancers);
